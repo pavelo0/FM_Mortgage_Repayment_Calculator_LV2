@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'PJSans-Italic';
+  src: url(assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'PJSans';
+  src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+:root {
+  --lime-color: #d8db2f;
+  --red: #d73328;
+  --black900: #133041;
+  --black700: #4e6e7e;
+  --black500: #6b94a8;
+  --black300: #9abed5;
+  --black100: #e4f4fd;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--black100);
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  width: 1008px;
+  height: 606px;
+  border-radius: 24px;
+  background-color: var(--white);
+}
+.calculation-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+.part-header-and-clear-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.part-header-and-clear-btn .part-header {
+  font-family: 'PJSans';
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1%;
+  font-weight: 700;
+  color: var(--black900);
+}
+.clear-all {
+  font-family: 'PJSans';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: var(--black700);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.input-header {
+  font-family: 'PJSans';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: var(--black700);
+  padding-bottom: 12px;
+}
+.input-field {
+  border-radius: 4px;
+  border: 2px solid var(--black300);
+}
+
+.mortgage-amount-block {
+}
+/* .mortgage-amount-block .input-header {
+} */
+.mortgage-amount-block .input-field {
+  min-width: 424px;
+  min-height: 48px;
+}
+
+.term-and-rest-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.mortgage-term-block {
+}
+.mortgage-term-block .input-header {
+  padding-bottom: 12px;
+}
+.mortgage-term-block .input-field {
+  height: 48px;
+}
+.interest-rate-block {
+}
+.interest-rate-block .input-header {
+  padding-bottom: 12px;
+}
+.interest-rate-block .input-field {
+  height: 48px;
+}
+
+.mortgage-type-block {
+  padding-top: 24px;
+  font-family: 'PJSans';
+}
+.mortgage-type .input-header {
+}
+
+.radio-input-item-rep {
+  margin-top: 10px;
+  width: 100%;
+  border: 2px solid var(--black700);
+  color: var(--black900);
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+.radio-input-item-rep .input-field {
+}
+.radio-input-item-rep .radio-label {
+  padding-left: 16px;
+}
+
+.radio-input-item-intrst {
+  margin-top: 10px;
+  width: 100%;
+  border: 2px solid var(--black700);
+  color: var(--black900);
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+.radio-input-item-intrst .input-field {
+}
+.radio-input-item-intrst .radio-label {
+  padding-left: 16px;
+}
+
+.result-btn {
+  background-color: var(--lime-color);
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  min-width: 314px;
+  max-width: 350px;
+  font-family: 'PJSans';
+  margin: 0 auto;
+}
+.result-icon {
+  padding: 16px 12px 16px 40px;
+}
+.header-btn {
+  padding: 16px 40px 16px 0px;
+}
+
+.result-part {
+  padding: 40px;
+  background-color: var(--black900);
+  color: var(--black100);
+  border-radius: 0px 24px 24px 80px;
+}
+.result-part .part-header {
+  font-family: 'PJSans';
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: -1%;
+  font-weight: 700;
+  color: var(--white);
+}
+.part-description {
+  font-family: 'PJSans';
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: var(--black300);
+  padding-top: 16px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <section class="content-section">
+      <div class="calculator">
+        <div class="calculation-part">
+          <div class="part-header-and-clear-btn">
+            <h2 class="part-header">Mortgage Calculator</h2>
+            <a class="clear-all">Clear All</a>
+          </div>
+
+          <div class="input-data">
+            <div class="mortgage-amount-block">
+              <h4 class="input-header">Mortgage Amount</h4>
+              <input class="input-field" />
+            </div>
+
+            <div class="term-and-rest-block">
+              <div class="mortgage-term-block">
+                <h4 class="input-header">Mortgage Term</h4>
+                <input class="input-field" />
+              </div>
+
+              <div class="interest-rate-block">
+                <h4 class="input-header">Interest Rate</h4>
+                <input class="input-field" />
+              </div>
+            </div>
+
+            <div class="mortgage-type-block">
+              <h4 class="input-header">Mortgage Type</h4>
+              <div class="radio-input-item-rep">
+                <input type="radio" class="input-field" name="repayment" />
+                <label for="repayment" class="radio-label">Repayment</label>
+              </div>
+
+              <div class="radio-input-item-intrst">
+                <input type="radio" class="input-field" name="interest-only" />
+                <label for="interest-only" class="radio-label">Interest Only</label>
+              </div>
+            </div>
+          </div>
+
+          <button class="result-btn">
+            <img
+              src="assets/images/icon-calculator.svg"
+              alt="Calculator-Icon"
+              class="result-icon"
+            />
+
+            <h3 class="header-btn">Calculate Repayments</h3>
+          </button>
+        </div>
+
+        <div class="result-part">
+          <h2 class="part-header">Your results</h2>
+          <p class="part-description">
+            Your results are shown below based on the information you provided. To adjust
+            the results, edit the form and click “calculate repayments” again.
+          </p>
+          <div class="result-of-calculation-block">
+            <h4 class="mounthly-price-header">Your monthly repayments</h4>
+            <h1 class="mounthly-value-header">177, 999</h1>
+            /* Need to search: how to make lines */
+            <h4 class="total-price-header">Total you'll repay over the term</h4>
+            <h1 class="total-result-value-header">&pound; 347, 999</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
